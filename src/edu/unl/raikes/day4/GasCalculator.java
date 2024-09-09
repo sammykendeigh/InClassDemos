@@ -12,7 +12,7 @@ public class GasCalculator {
      */
     public static void main(String args[]) {
         // how much will it cost to fill my tank?
-        double costOfGas = 2.799 * 18;
+        int costOfGas = (int) (2.799 * 18);
         System.out.println(costOfGas);
     }
 }
