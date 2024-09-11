@@ -21,7 +21,6 @@ public class Misc {
         demoChar = (char) (demoChar * -1);
         System.out.println(demoChar + " " + (int) demoChar);
 
-        /////
         char h = 'h';
         h = (char) (h - 1);
         System.out.println(h + " " + (int) h);
@@ -34,12 +33,10 @@ public class Misc {
         System.out.println("a is " + (int) ('a'));
         System.out.println("A is " + (int) ('A'));
 
-        ////
         int x = 83;
         String q = "hey " + (char) x + "hey";
         System.out.println(q);
 
-        //
         String racecar = "racecar";
         String book = racecar;
         book += " fast";
@@ -52,7 +49,6 @@ public class Misc {
         System.out.println(football);
         System.out.println(baseball);
 
-        ///
         String s1 = "Football";
         String s2 = s1.substring(4, 8);
         s2 = s2.substring(1);
