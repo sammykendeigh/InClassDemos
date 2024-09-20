@@ -2,7 +2,7 @@
  * This is Misc.java, packaged within
  * edu.unl.raikes.day6.
  */
-package edu.unl.raikes.day6;
+package edu.unl.raikes.day06;
 
 /**
  * This class provides the definitions for Misc in the edu.unl.raikes.day6 package.

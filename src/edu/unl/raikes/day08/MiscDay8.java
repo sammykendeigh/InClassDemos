@@ -1,4 +1,4 @@
-package edu.unl.raikes.day8;
+package edu.unl.raikes.day08;
 
 /**
  * This class contains a game that allows users to play MadLibs.

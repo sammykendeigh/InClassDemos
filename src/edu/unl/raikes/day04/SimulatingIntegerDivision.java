@@ -1,4 +1,4 @@
-package edu.unl.raikes.day4;
+package edu.unl.raikes.day04;
 
 /**
  * This is SimulatingIntegerDivision.java, packaged within edu.unl.raikes.day4.

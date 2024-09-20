@@ -2,7 +2,7 @@
  * This is PrintFormatting.java, packaged within
  * edu.unl.raikes.day7.
  */
-package edu.unl.raikes.day7;
+package edu.unl.raikes.day07;
 
 /**
  * This class provides the definitions for PrintFormatting in the edu.unl.raikes.day7 package.

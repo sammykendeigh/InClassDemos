@@ -1,4 +1,4 @@
-package edu.unl.raikes.day4;
+package edu.unl.raikes.day04;
 
 /**
  * This is MysteryEvaluations.java, packaged within edu.unl.raikes.day4.
