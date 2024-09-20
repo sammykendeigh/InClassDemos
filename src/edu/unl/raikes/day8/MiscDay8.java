@@ -18,6 +18,8 @@ public class MiscDay8 {
             x = x + 1;
         } else if (x > 6) {
             System.out.println("greater than 6");
+        } else {
+            System.out.println(9);
         }
 
         System.out.println(x);
