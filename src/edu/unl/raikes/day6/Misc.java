@@ -1,13 +1,9 @@
-/**
- * This is Misc.java, packaged within
- * edu.unl.raikes.day6.
- */
 package edu.unl.raikes.day6;
 
 import java.util.Scanner;
 
 /**
- * This class provides the definitions for Misc in the edu.unl.raikes.day6 package.
+ * This is Aaaaaaaaaa.java, packaged within unl.edu.raikes.day12.
  */
 public class Misc {
 
@@ -17,15 +13,51 @@ public class Misc {
      * @param args This program does not accept any arguments.
      */
     public static void main(String[] args) {
-        // TODO Auto-generated method stub
         Scanner scnr = new Scanner(System.in);
-        System.out.print("Enter a number: ");
 
-        int input = scnr.nextInt();
+        // ask the user for the size
+        System.out.print("please enter an int: ");
+        int size = scnr.nextInt();
 
-        for (int i = 1; i <= input; i++) {
-            System.out.print("*");
+        String stripeStartsWithA = ("");
+        String stripeStartsWithBlank = ("");
+        for (int row = 0; row < size; row++) {
+            for (int trueCol = 0; trueCol < size * size; trueCol++) {
+                int col = trueCol % size;
+                int middle = (size - 1) / 2;
+                int half = size / 2;
+                int end = size - 1;
+                int whichA = trueCol / size;
+
+                boolean isCrossBar = row == middle;
+                boolean isFirstLeg = col == 0 && row > middle;
+                boolean isSecondLeg = col == end && row > middle;
+
+                boolean isUpAngle = col == middle - row;
+                boolean isDownAngle = col == half + row;
+                boolean isPartOfA = isCrossBar || isFirstLeg || isSecondLeg || isUpAngle || isDownAngle;
+                boolean isOddA = whichA % 2 == 1;
+
+                // for the stripe that starts with a
+                if (isPartOfA && !isOddA) {
+                    stripeStartsWithA += "X";
+                } else {
+                    stripeStartsWithA += ".";
+                }
+                // for the stripe that starts with a blank
+                if (isPartOfA && isOddA) {
+                    stripeStartsWithBlank += "X";
+                } else {
+                    stripeStartsWithBlank += ".";
+                }
+            }
+            stripeStartsWithA += "\n";
+            stripeStartsWithBlank += "\n";
         }
+        System.out.print(stripeStartsWithA);
+        System.out.print(stripeStartsWithBlank);
+
+        scnr.close();
     }
 
 }
