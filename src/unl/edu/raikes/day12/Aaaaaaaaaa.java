@@ -19,6 +19,8 @@ public class Aaaaaaaaaa {
         System.out.print("please enter an int:");
         int userNum = scnr.nextInt();
 
+        String aaaaa = "";
+
         for (int row = 1; row <= userNum; row++) {
             for (int col = 1; col <= userNum; col++) {
                 System.out.print(".");
