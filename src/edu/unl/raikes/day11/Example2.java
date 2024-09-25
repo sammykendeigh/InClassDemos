@@ -1,9 +1,9 @@
-package unl.edu.raikes.day11;
+package edu.unl.raikes.day11;
 
 /**
  * This is LoopPractice.java, packaged within unl.edu.raikes.day11.
  */
-public class CalculatingTotals {
+public class Example2 {
 
     /**
      * The main method.
@@ -11,12 +11,11 @@ public class CalculatingTotals {
      * @param args This program does not accept any arguments.
      */
     public static void main(String[] args) {
-        int total = 0;
-        for (int i = 1; i <= 4; i++) {
+        for (int i = 1; i <= 5; i++) {
             for (int j = 1; j <= i; j++) {
-                total += i;
+                System.out.print("*");
             }
+            System.out.println();
         }
-        System.out.println(total);
     }
 }

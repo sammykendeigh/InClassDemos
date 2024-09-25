@@ -1,4 +1,4 @@
-package unl.edu.raikes.day12;
+package edu.unl.raikes.day12;
 
 import java.util.Scanner;
 
