@@ -12,16 +12,16 @@ public class AverageTemperatureWithArrays {
         int days = scnr.nextInt();
 
         // initialize the variables for user input
-        double day1Temperature = 0;
+        double[] dayTemperatures = new double[days];
 
         // this will keep a running total of the temperatures we've seen so far
         double totalOfTemperatures = 0;
 
-        // get temperatures from user (fingers crossed they don't want more than 15!)
-        if (days <= 1) {
-            System.out.print("Day 1's high temp? ");
-            day1Temperature = scnr.nextDouble();
-            totalOfTemperatures += day1Temperature;
+        // get temperatures from user
+        for (int day = 0; day < dayTemperatures.length; day++) {
+            System.out.print("Day " + (day + 1) + "'s high temp? ");
+            dayTemperatures[day] = scnr.nextDouble();
+            totalOfTemperatures += dayTemperatures[day];
         }
 
         // calculate the average of all temperatures
@@ -30,13 +30,15 @@ public class AverageTemperatureWithArrays {
         // we need to know how many days are above average
         int daysAboveAverage = 0;
 
-        if (day1Temperature > averageTemperature) {
-            daysAboveAverage++;
+        for (int day = 0; day < dayTemperatures.length; day++) {
+            if (dayTemperatures[day] > averageTemperature) {
+                daysAboveAverage++;
+            }
         }
 
         // print out statistics to user
         System.out.println("Average temp = " + averageTemperature);
-        System.out.println(daysAboveAverage + "days were above average.");
+        System.out.println(daysAboveAverage + " days were above average.");
 
         // CLOSE THAT SCANNER! :-)
         scnr.close();
