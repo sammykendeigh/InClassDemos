@@ -57,7 +57,5 @@ public class Misc {
         System.out.print(stripeStartsWithA);
         System.out.print(stripeStartsWithBlank);
 
-        scnr.close();
     }
-
 }
