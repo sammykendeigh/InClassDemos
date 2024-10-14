@@ -53,6 +53,6 @@ public class IntegerUtilsTest {
         double actualResult = IntegerUtils.power(6.0, 4);
 
         // T
-        assertTrue("Did not teserect 6 appropriately", Math.abs(expectedResult - actualResult) < DELTA);
+        assertTrue("Did not tesseract 6 appropriately", Math.abs(expectedResult - actualResult) < DELTA);
     }
 }
