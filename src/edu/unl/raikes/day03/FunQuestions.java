@@ -1,4 +1,4 @@
-package edu.unl.raikes.day3;
+package edu.unl.raikes.day03;
 
 /**
  * This is FunQuestions.java, packaged within edu.unl.raikes.day3.

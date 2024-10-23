@@ -1,4 +1,4 @@
-package edu.unl.raikes.day2;
+package edu.unl.raikes.day02;
 
 /**
  * This is the Class HelloWorld.java, packaged within edu.unl.raikes.day2.

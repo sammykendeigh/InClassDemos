@@ -1,4 +1,4 @@
-package edu.unl.raikes.day4;
+package edu.unl.raikes.day04;
 
 /**
  * This is GasCalculator.java, packaged within edu.unl.raikes.day4.
