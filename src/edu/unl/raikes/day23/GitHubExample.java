@@ -1,4 +1,4 @@
-package edu.unl.raikes.day22;
+package edu.unl.raikes.day23;
 
 /**
  * This is GitHubExample.java, packaged within edu.unl.raikes.day22.
